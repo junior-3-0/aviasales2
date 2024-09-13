@@ -1,0 +1,33 @@
+.container {
+  margin: 0 auto;
+  max-width: 96rem;
+  padding-bottom: 5rem;
+  padding-inline: clamp(3.3rem, 6.5vw, 10.3rem);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: clamp(2rem, 3.5vw, 5rem);
+  padding-bottom: var(--m-5);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr minmax(50.3rem, 2fr);
+  gap: var(--m-2);
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--m-2);
+  flex-wrap: wrap;
+}
+
+@media (max-width: 840px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}

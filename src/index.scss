@@ -1,0 +1,36 @@
+:root {
+  --background-color: #f3f7fa;
+  --button-active-color: #2196f3;
+  --text-color-main: #4a4a4a;
+  --text-color-secondary: #a0b0b9;
+  --background-card: #ffffff;
+  --color-price: #2196f3;
+  --font-size-main: 1.2rem;
+  --font-size-checkbox: 1.3rem;
+  --font-size-card-time: 1.4rem;
+  --font-size-price: 2.4rem;
+  --border-color-disabled-checkbox: #9abbce;
+  --hover-color-checkbox: #f1fcff;
+  --m-2: 2rem;
+  --m-5: 5rem;
+  --inline-padding: 10.3rem;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&display=swap");
+@import "./_normalize.scss";
+
+html,
+body {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 62.5%;
+  font-weight: 400;
+  background-color: var(--background-color);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
