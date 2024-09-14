@@ -1,20 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
 import filterSlice from "./filter.slice";
 import sortSlice from "./sort.slice";
-import { ticketsApi } from "./ticket.slice";
-
-// import ticketSlice from "./ticket.slice";
+import listSlice from "./list.slice";
+import countSlice from "./count.slice";
 
 export const store = configureStore({
   reducer: {
     filter: filterSlice,
     sort: sortSlice,
-    [ticketsApi.reducerPath]: ticketsApi.reducer,
+    list: listSlice,
+    count: countSlice,
   },
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(ticketsApi.middleware),
-});
-
-store.subscribe(() => {
-  console.log(store.getState());
 });
