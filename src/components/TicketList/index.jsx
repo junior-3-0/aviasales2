@@ -47,7 +47,7 @@ export function TicketList() {
   useEffect(() => {
     dispatch(fetchList());
     dispatch(countAction.reset());
-  }, [no, one, two, three]);
+  }, []);
 
   return (
     <div className={styles.list}>
