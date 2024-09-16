@@ -65,7 +65,7 @@ export function TicketList() {
         </div>
       )}
       {resultlist.map((ticket) => (
-        <Ticket key={(ticket.price * Math.random()).toFixed(3)} {...ticket} />
+        <Ticket key={ticket.price * Math.random()} {...ticket} />
       ))}
       {limit && !loginErrorMessage && !resultlist && !loading && (
         <div className={styles.info}>
